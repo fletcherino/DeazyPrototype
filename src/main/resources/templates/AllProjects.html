@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deazy</title>
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+<div id="page-container">
+    <div id="content-wrap">
+        <nav th:replace="fragments/nav_template.html :: nav">
+        </nav>
+        <div class="scrollbar" id="scroll">
+            <div class="force-overflow">
+
+
+                <main id="test">
+
+                    <div id ="bg">
+
+                        <div id="introduction">
+
+                            <div id="project-description">
+                                <h1>Projects</h1>
+                                <p>This page is used to view the projects created by various teams. <br/>
+                                    Select a project to view more information about the project.</p>
+
+                            </div>
+                            <img id="pi" src="images/pink-illustration.svg" alt="pink illustration">
+
+                        </div>
+                    </div>
+
+                    <!-- Project Boxes -->
+                    <!--<h2 id="proh2">Projects</h2>--><div class="separator"></div>
+                    <div class="searchContainer">
+                        <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for projects.." title="Type in a project name">
+                    </div>
+                    <div id="projectsOuterBox">
+                        <div th:each="project, projectIndex : ${caseStudies}" class="projectsInnerBox">
+                            <a id="project" th:replace="fragments/project.html :: a"></a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <footer id="footer" th:replace="fragments/footer_template.html :: footer"></footer>
+        </div>
+    </div>
+</div>
+<script src="/scripts/projectSearch.js"></script>
+</body>
+
+<!-- Scripts to generate data -->
+
+<!--
+
+<script type="type=text/javascript">
+    var data;
+</script>
+<script type="text/javascript" src="scripts/dataProject.js"></script>
+<script type="text/javascript" src="scripts/dataLoaderProject.js"></script>
+
+-->
+
+</html>

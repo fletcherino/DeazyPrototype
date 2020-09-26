@@ -1,0 +1,1257 @@
+body {
+    position: relative;
+    min-height: 100vh ;
+    margin: 0;
+}
+main {
+    min-height: calc(100% - 100px);
+    /*minus height of footer*/
+    padding: 0 0 35px;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+footer .Logos h3{
+    margin-top: 3%;
+    font-size: 18px;
+
+    overflow: auto;
+
+}
+footer hr {
+    border: #333 solid 1px;
+    width: 100%;
+    align-content: center;
+}
+
+footer .footender li {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.footender {
+    border-radius: 30px;
+    background-color: #ffc0cb55;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+/*Set font for entier site */
+
+@font-face {
+    font-family: 'Avinir';
+    src: url("../images/Avenir-book.woff2") format('woff2');
+}
+
+html, body, footer {
+    font-family: Avinir;
+    padding: 0;
+    margin: 0;
+
+}
+
+html, body {
+    overflow-x: hidden;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+/*logo in the navBar*/
+#DLogo{
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+}
+
+#Deazy{
+    height: 25px;
+    width: 120px;
+    padding: 18px;
+    float: left;
+}
+
+.navRight img{
+    height: 45px;
+    width: 130px;
+
+}
+
+.button1 {
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: darkturquoise;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px black;
+    float: left;
+    height: 35px;
+    width: 135px;
+
+}
+
+.button:hover {background-color: #47b5bd}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.navnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    padding-left: 15%;
+    padding-bottom: 54px;
+    padding-top: 60px;
+}
+
+.navnav a {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.nav-left {
+    display: flex;
+    justify-items: center;
+}
+
+.navnav a:hover{
+    color: darkturquoise;
+}
+
+.midlink {
+    text-decoration: none;
+    color: green;
+}
+
+.midlink:hover {
+    color: darkturquoise;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    float: right;
+    padding-right: 200px;
+}
+
+/* Nav bar buffer (hiding content under navbar */
+
+main {
+
+    padding-top: 26px;
+}
+
+#pi{
+    height: 300px;
+    float: right;
+}
+
+/* Footer Controller */
+
+footer {
+    background-color: white;
+    overflow: hidden;
+
+}
+
+#footer {
+
+    bottom: 0;
+    width: 100%;
+}
+
+#page-container {
+    position: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+    overflow: hidden;
+}
+
+
+
+#logo2 {
+    height: 120px;
+    width: 120px;
+    margin-top: 0;
+    vertical-align: top;
+    margin-bottom: 35px;
+    margin-left: 300px;
+    overflow: auto;
+    float: left;
+}
+
+
+
+.button2 {
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff6666;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px black;
+    height: 35px;
+    width: 135px;
+
+}
+
+.button2:hover {background-color: red}
+
+.button2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button3 {
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px black;
+    height: 35px;
+    width: 135px;
+}
+
+.button3:hover {background-color: lightgray;}
+
+.button3:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.Logos {
+
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#DLogo2{
+    float: left;
+    height: 60px;
+    width: 60px;
+    padding-left: 300px;
+    padding-top: 5px;
+}
+
+#Deazy2{
+
+    height: 25px;
+    width: 120px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#png1 {
+
+    margin-top: 1%;
+    height: 60px;
+    width: 140px;
+    margin-left: 50%;
+}
+
+#png2 {
+
+    height: 60px;
+    width: 140px;
+    alignment: right;
+    margin-left: 30px;
+}
+
+.social img {
+    height: 50px;
+    width: 50px;
+}
+
+.social {
+    text-align: center;
+}
+
+
+/* MAIN BODY STYLING */
+
+main {
+
+}
+
+h1 {
+    font-size: 48px;
+    padding-left: 0px;
+    padding-right: 0%;
+    padding-top: 10px;
+    margin: 5px 0 5px 0;
+    text-align: left;
+}
+
+#introduction {
+    display: flex;
+    justify-content: left;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#introduction2 {
+
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #00000004;
+
+}
+
+#bg {
+    background-image: url(../images/pink_bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: -700px;
+}
+
+#bg2 {
+    background-image: url(../images/blue-bg-about.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: -300px;
+}
+
+#bg3 {
+    background-image: url(../images/green_bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: -800px;
+}
+
+#bg4 {
+    background-image: url(../images/blue_bg2.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: -800px;
+}
+#introduction p {
+    /*width: 90%;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    margin: 0px 0 0px 0;
+    text-align: left;
+    font-size: 20px;
+
+}
+
+#proh2 {
+    font-size: 36px;
+    padding-left: 15%;
+}
+
+#projectsOuterBox {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-wrap: wrap;
+
+}
+
+div.projectsInnerBox:nth-child(6n) {
+    background: #FF666610;
+    border-bottom: 5px solid #FF666620;
+}
+div.projectsInnerBox:nth-child(6n) span {
+    background: #FF666690;
+}
+
+div.projectsInnerBox:nth-child(6n+1) {
+    background: #47B5BD10;
+    border-bottom: 5px solid #47B5BD20;
+}
+
+div.projectsInnerBox:nth-child(6n+1) span {
+    background: #47B5BD90;
+}
+
+div.projectsInnerBox:nth-child(6n+2) {
+    background: #3366FF10;
+    border-bottom: 5px solid #3366FF20;
+}
+div.projectsInnerBox:nth-child(6n+2) span {
+    background: #3366FF90;
+}
+
+div.projectsInnerBox:nth-child(6n+3) {
+    background: #7CCC3310;
+    border-bottom: 5px solid #7CCC3320;
+}
+div.projectsInnerBox:nth-child(6n+3) span{
+    background: #7CCC3390;
+}
+
+div.projectsInnerBox:nth-child(6n+4) {
+    background: #FD840010;
+    border-bottom: 5px solid #FD840020;
+}
+div.projectsInnerBox:nth-child(6n+4) span{
+    background: #FD840090;
+}
+
+div.projectsInnerBox:nth-child(6n+5) {
+    background: #FFD90010;
+    border-bottom: 5px solid #FFD90020;
+}
+div.projectsInnerBox:nth-child(6n+5) span{
+    background: #FFD90090;
+}
+
+#project-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.projectsInnerBox {
+
+    flex: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e8f8ff;
+    border-bottom: 5px solid #bad8e6;
+    border-radius: 20px;
+    width: 75%;
+    margin: 20px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: all 0.4s;
+
+
+}
+
+
+.projectsInnerBox:hover {
+    transform: scale(1.1);
+}
+
+
+.teamProTitleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.teamProTitle {
+    margin: 0;
+    font-size: 30px;
+    padding: 0 5px 0 5px;
+}
+#teamsOuterBox {
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-wrap: wrap;
+
+}
+
+.teamInnerBox {
+
+    flex: 450px;
+    background-color: #FD84000D;
+    border-bottom: 5px solid #FD840027;
+    border-radius: 58px 58px 58px 58px;
+    width:75%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 37px;
+    padding: 20px;
+
+}
+
+.teamTitleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.teamTitle {
+    margin: 0;
+    font-size: 30px;
+    padding: 0 5px 0 5px;
+}
+
+.teamNameBox {
+    padding: 0 5px 0 5px;
+}
+
+.teamName {
+
+    font-size: 24px;
+    margin: 0;
+}
+
+.teamLinkBox {
+    margin-bottom: 8px;
+    padding: 0 5px 0 5px;
+}
+
+.teamProjectLink {
+    all: unset;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.teamProjectLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: darkturquoise;
+}
+
+.teamLink {
+    all: unset;
+    color: #333333;
+}
+
+.teamLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: darkturquoise;
+}
+
+.teamPDBox {
+    padding: 0 5px 0 5px;
+}
+
+.teamProDesc {
+    margin: 0;
+    text-align: justify;
+}
+
+.tagBox {
+    padding: 5px 5px 5px 5px;
+}
+
+/*.tags {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-items: center;*/
+/*    justify-content: flex-end;*/
+/*    padding-left: 10px;*/
+/*    padding-right: 10px;*/
+/*    flex-wrap: wrap;*/
+/*    margin: 15px;*/
+/*    color: palevioletred;*/
+/*    text-align: center;*/
+
+/*}*/
+
+/*.tags span:nth-child(6n) {*/
+/*    background: #FF6666;*/
+
+/*}*/
+
+/*.tags span:nth-child(6n+1)  {*/
+/*    background: #47B5BD;*/
+
+/*}*/
+
+/*.tags span:nth-child(6n+2) {*/
+/*    background: #3366FF;*/
+
+/*}*/
+
+/*.tags span:nth-child(6n+3) {*/
+/*    background: #7CCC33;*/
+
+/*}*/
+
+/*.tags span:nth-child(6n+4) {*/
+/*    background: #FD8400;*/
+
+/*}*/
+
+/*.tags span:nth-child(6n+5) {*/
+/*    background: #FFD900 ;*/
+
+/*}*/
+
+#logh2{
+    text-align: right;
+    padding-right: 63px;
+}
+
+
+/* Login Form Settings     */
+.login {
+    cursor: pointer;
+    color: deeppink !important;
+}
+
+.login:hover {
+    color: darkturquoise !important;
+}
+
+.login:active {
+    color: turquoise !important;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #3366FF60;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-family: Avinir;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+.right-button {
+    float: right;
+}
+
+
+
+.middle-button {
+    align-self: center;
+
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    height: 55px;
+}
+
+section.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 360px;
+    background-color: #3366FF10;
+}
+div.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+span.container {
+    /*padding: 15px 0;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2px 0;
+}
+.sub-container {
+    padding: 3px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p.checkbox {
+    padding-left: 3px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #ffffff; /* Fallback color */
+    background-color: #252d3b00; /* Black w/ opacity */
+    padding-top: 60px;
+    transition: background-color 1s;
+
+}
+
+.modal:hover {
+    background-color: #00000055;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 350px; /* Could be more or less, depending on screen size */
+    box-shadow: 0px 2px 15px #33333325;
+}
+
+/* The Close Button (x) */
+.close {
+
+    float: right;
+    color: deeppink;
+    font-size: 35px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: mediumvioletred;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+.tag {
+    color: #ffffff;
+    background-color: #000;
+    border-radius: 100px;
+    padding: 4px;
+
+}
+
+
+.java {
+    color: #ffffff;
+    background-color: #0033CC;
+    border-radius: 100px;
+    line-height: 16px;
+    padding: 4px;
+
+}
+
+.python {
+    color: #ffffff;
+    background-color: #5CB85C;
+    border-radius: 100px;
+    line-height: 16px;
+    padding: 4px;
+}
+
+.web {
+    color: #ffffff;
+    background-color: #CC0033;
+    border-radius: 100px;
+    line-height: 16px;
+    padding: 4px;
+
+}
+
+.c {
+    color: #ffffff;
+    background-color: #34495E;
+    border-radius: 100px;
+    line-height: 16px;
+    padding: 4px;
+}
+
+#test  {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.test  {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.fling-minislide {
+    width:500px;
+    height: 350px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 6%;
+    transition: transform 0.5s;
+}
+
+.fling-minislide:hover {
+    transform: scale(1.15);
+}
+.fling-minislide img{
+    position:absolute;
+    animation:fling-minislide 20s infinite;
+    opacity:0;
+    width: 100%;
+    height: 70%;}
+
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
+
+.hh1 {
+    font-size: 48px;
+    padding-left: 0px;
+    padding-right: 0%;
+    padding-top: 10px;
+    text-align: left;
+    margin: 5px 0 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    margin:0 auto;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th {
+    background: mediumpurple;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+}
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    table {
+        width: 100%;
+    }
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+
+        color: #000;
+        font-weight: bold;
+    }
+
+}
+
+.slidetable{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.tablee{
+
+    padding-top: 5%;
+
+
+}
+.tablee p{
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.changelogtable{
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 3%;
+}
+
+.changelogtable th{
+
+    background: darkslategray !important;
+}
+.changelogtable caption{
+    font-weight: bold;
+}
+
+.changelogtable table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.changelogtable table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+.changelogtable table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+.changelogtable table th,
+.changelogtable table td {
+    padding: .625em;
+    text-align: center;
+}
+
+.changelogtable table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+}
+
+.changelogtable @media screen and (max-width: 600px) {
+    .changelogtable table {
+        border: 0;
+    }
+
+    .changelogtable table caption {
+        font-size: 1.3em;
+    }
+
+    .changelogtable table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .changelogtable table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    .changelogtable table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    .changelogtable table td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .changelogtable table td:last-child {
+        border-bottom: 0;
+    }
+
+}
+.scrollbar
+{
+}
+
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: #F5F5F533;
+}
+
+body::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F555;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+    background-color: #FF666620;
+}
+
+.separator {
+    height: 55px;
+    position: center;
+}
+
+.editbutton{
+    float: right;
+    cursor: pointer;
+    padding-right: 15%;
+    font-weight: bold;
+}
+
+.editbutton:hover{
+
+    color: red;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+divy {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+.login-page {
+    /*background-color: #3366FF10;*/
+}
+
+#logox {
+    padding: 30px;
+    height: 60px;
+    /*filter: brightness(0) invert(1);*/
+}
+
+.popup-header {
+    text-align: center;
+    padding: 10px;
+
+}
+
+.searchContainer {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 30px;
+
+}
+
+#searchInput {
+    border: 1px solid #FF666633;
+    background-color: #FF666607;
+}
+
+input {
+    font-family: Avinir;
+}

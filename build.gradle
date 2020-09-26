@@ -1,0 +1,34 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group = 'com.team2'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    
+    // Spring & Thymeleaf dependencies below
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    // Test dependency below
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    
+    // MySQL & JDBC dependencies below
+    implementation(group: 'mysql', name: 'mysql-connector-java', version: '5.1.13')
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation('org.springframework.boot:spring-boot-starter-security')
+    implementation 'org.springframework.session:spring-session-jdbc'
+}
+
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,39 @@
+main.create-project {
+     display: flex;
+     justify-content: center;
+     align-content: stretch;
+    padding: 0 0 35px!important;
+ }
+form.create-project {
+    width: 700px;
+    background-color: #7CCC3310;
+    padding: 30px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px;
+    align-self: center;
+}
+@media screen and (max-width: 300px) {
+    form.create-project {
+        width: 100vw;
+        padding: 0;
+    }
+}
+.form-inner{
+    padding: 10px 0;
+}
+.input-text {
+    border-radius: 10px;
+}
+.input-label div.buttons {
+    padding-right: 0;
+}
+input.button {
+    padding: 5px;
+    margin: 7px 15px 0 0;
+    background-color: #7ccc33;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deazy</title>
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+
+<body>
+<div id="page-container">
+    <div id="content-wrap">
+
+        <!-- Navigation Bar -->
+
+        <nav th:replace="fragments/nav_template.html :: nav">
+        </nav>
+
+        <!-- Main Body -->
+
+        <main id="test">
+
+            <div id ="bg3">
+
+                <div id="introduction">
+
+                    <div id="project-description">
+                        <h1>Admin Functions</h1>
+                        <p>This page is used to <a class="midlink" href="/register">add new users</a>.</br>
+                            Search for a username or role to edit user information.</p>
+
+                    </div>
+                    <img id="pi" src="images/green-illustration.svg" alt="green illustration">
+
+                </div>
+            </div>
+
+            <!-- Project Boxes -->
+            <h2 id="proh2">Users List</h2>
+
+
+
+
+        </main>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer id="footer" th:replace="fragments/footer_template.html :: footer">
+    </footer>
+</div>
+</div>
+</body>

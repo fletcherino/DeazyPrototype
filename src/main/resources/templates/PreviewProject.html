@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deazy</title>
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+
+<body>
+
+<nav th:replace="fragments/nav_template.html :: nav"></nav>
+
+
+<main id="test">
+    <div id="introduction2">
+        <div class="teamProTitleBox">
+            <h1 class="hh1" th:text="${input.title}"></h1>
+            <p th:replace="fragments/tags_template.html :: tags">
+            </p>
+        </div>
+        <p th:text="${input.content}"></p>
+        <p class="" th:text="${input.teamName}"></p>
+        <form action="#" th:action="@{/save}" th:object="${input}" method="post">
+            <input type="hidden" id="teamName" name="teamName" th:value="${input.teamName}" />
+            <input type="hidden" id="title" name="title" th:value="${input.title}" />
+            <input type="hidden" id="content" name="content" th:value="${input.content}" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</main>
+
+<footer id="footer" th:replace="fragments/footer_template.html :: footer">
+</footer>
+
+</body>
+
+</html>
+
+

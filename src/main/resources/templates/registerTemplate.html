@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <style>
+        #registerForm > *{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+
+
+    <form class="modal-content animate" action="/registration" method="post" th:object="${user}">
+        <section class="container">
+            <img id="logox" src="images/deazy_logo.svg" alt="Deazy Logo">
+
+            <div>
+                <h3 class="popup-header">REGISTER</h3>
+            </div>
+
+            <div class="container">
+                <label for="un"><b>Username</b></label>
+                <input id="un" type="text" placeholder="Username" name="usernname" th:field="*{username}" required/>
+            </div>
+            <div class="container">
+                <label for="pw"><b>Password</b></label>
+                <input id="pw" type="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="container">
+                <label for="cpw"><b>Confirm Password</b></label>
+                <input id="cpw" type="password" placeholder="Password" name="cpassword" required>
+            </div>
+
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+            <div class="container" style="padding-top: 35px">
+                <button class="middle-button" type="submit">Create User</button>
+            </div>
+            <div class="container">
+
+            </div>
+
+
+            <p th:if="${errors} != null" th:text="ERROR"></p>
+            <p th:each="err : ${errors}" th:text="${err}"></p>
+
+
+
+        </section>
+    </form>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="projectsInnerBox" class="projectsInnerBox"> <!-- THESE INNER BOXES WILL BE DYNAMICALLY GENERATED -->
+    <div class="teamProTitleBox">
+        <p class="teamProTitle"><a class=teamProjectLink href="/individualProject">Project Title 1</a> </p>
+        <div class="tagsBox">
+            <p th:replace="fragments/tags_template.html :: tags">
+
+            </p>
+        </div>
+    </div>
+    <div class="teamNameBox">
+        <p class="teamName"><a class="teamLink">Team-1</a></p>
+    </div>
+    <div class="teamPDBox">
+        <p class="teamProDesc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+    </div>
+</div>

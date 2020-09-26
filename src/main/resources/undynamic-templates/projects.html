@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deazy</title>
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+
+<body>
+
+        <!-- Navigation Bar -->
+
+        <nav th:replace="fragments/nav_template.html :: nav">
+        </nav>
+
+        <!-- Main Body -->
+        <div class="editbutton" onclick="myFunction(this);">Edit Content</div>
+        <div id="myP" contenteditable="false">
+        <main id="test">
+
+
+            <div id="introduction2">
+                <div class="teamProTitleBox">
+                <h1 class="hh1">Project Title-1</h1>
+                <p th:replace="fragments/tags_template.html :: tags">
+
+                </p>
+            </div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+            </div>
+
+            <!-- Slide Box -->
+
+            <div class="slidetable">
+
+                <div class="fling-minislide">
+                    <img src="/images/s1.jpg" alt="Slide 4" />
+                    <img src="/images/s2.jpg" alt="Slide 3" />
+                    <img src="/images/s3.jpg" alt="Slide 2" />
+                    <img src="/images/s4.jpg" alt="Slide 1" />
+                </div>
+
+                <!-- Team Members Table -->
+
+        <div class="tablee">
+            <p>Team-1 Members</p>
+            <table>
+                <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Responsibility</th>
+                    <th>Mail Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td data-column="First Name">Harry</td>
+                    <td data-column="Last Name">Potter</td>
+                    <td data-column="Job Title">Chosen One</td>
+                    <td data-column="Twitter">hp@.com</td>
+                </tr>
+                <tr>
+                    <td data-column="First Name">Severus</td>
+                    <td data-column="Last Name">Snape</td>
+                    <td data-column="Job Title">HB Prince</td>
+                    <td data-column="Twitter">ss@.com</td>
+                </tr>
+                <tr>
+                    <td data-column="First Name">Albus</td>
+                    <td data-column="Last Name">Dumbledore</td>
+                    <td data-column="Job Title">Headmaster</td>
+                    <td data-column="Twitter">ad@.com</td>
+                </tr>
+                <tr>
+                    <td data-column="First Name">Rubeus</td>
+                    <td data-column="Last Name">Hagrid</td>
+                    <td data-column="Job Title">Keeper</td>
+                    <td data-column="Twitter">rh@.com</td>
+                </tr>
+                <tr>
+                    <td data-column="First Name">Tom</td>
+                    <td data-column="Last Name">Riddle</td>
+                    <td data-column="Job Title">Dark Lord</td>
+                    <td data-column="Twitter">tr@.com</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+            </div>
+
+            <!-- ChangeLog Table -->
+
+            <div class = "changelogtable">
+            <table>
+                <caption>Change Log</caption>
+                <thead>
+                <tr>
+                    <th scope="col">User</th>
+                    <th scope="col">Changes</th>
+                    <!--<th scope="col">Amount</th>-->
+                    <th scope="col">Update Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td data-label="User">Harry</td>
+                    <td data-label="Changes">Added links to footer.</td>
+                    <!--<td data-label="Amount"></td>-->
+                    <td data-label="Update Date">07/11/2019</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="User">Severus</td>
+                    <td data-label="Changes">Added high res portfolio photos.</td>
+                    <!--<td data-label="Amount"></td>-->
+                    <td data-label="Update Date">13/11/2019</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="User">Albus</td>
+                    <td data-label="Changes">Fixed buttons on welcome page.</td>
+                    <!--<td data-label="Amount"></td>-->
+                    <td data-label="Update Date">20/11/2019</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="User">Rubeus</td>
+                    <td data-label="Changes">Changed loader to be simpler.</td>
+                    <!--<td data-label="Amount"></td>-->
+                    <td data-label="Update Date">26/11/2019</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="User">Tom</td>
+                    <td data-label="Changes">Fixed buttons on welcome page.</td>
+                    <!--<td data-label="Amount"></td>-->
+                    <td data-label="Update Date">28/11/2019</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </main>
+        </div>
+
+        <script>
+            function myFunction(button) {
+                var x = document.getElementById("myP");
+                if (x.contentEditable == "true") {
+                    x.contentEditable = "false";
+                    button.innerHTML = "Edit Content";
+                } else {
+                    x.contentEditable = "true";
+                    button.innerHTML = "Finish Editing";
+                }
+            }
+        </script>
+
+    <!-- Footer -->
+
+    <footer id="footer" th:replace="fragments/footer_template.html :: footer">
+    </footer>
+
+</body>
+
+</html>

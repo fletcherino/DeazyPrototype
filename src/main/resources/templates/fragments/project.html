@@ -1,0 +1,15 @@
+<a class="teamProjectLink" th:href="'/IndividualProject?project=' + ${projectIndex.index}" > <!-- THESE INNER BOXES WILL BE DYNAMICALLY GENERATED -->
+    <div class="teamProTitleBox">
+        <p class="teamProTitle" th:text="${project.caseStudyTitle}"> </p>
+        <div class="tagsBox">
+            <p th:replace="fragments/tags_template.html :: tags">
+            </p>
+        </div>
+    </div>
+    <div class="teamNameBox">
+        <p class="teamName"><a class="teamLink" ></a></p>
+    </div>
+    <div class="teamPDBox">
+        <p class="teamProDesc" th:text="${project.caseStudyContent}"></p>
+    </div>
+</a>

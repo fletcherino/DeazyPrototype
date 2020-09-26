@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deazy</title>
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+
+<body class="login-page">
+
+
+        <!-- Navigation Bar -->
+
+
+        <!-- Main Body -->
+
+        <main>
+
+            <form class="modal-content animate" action="/login" method="post">
+
+
+
+
+
+
+                <section class="container">
+                    <img id="logox" src="images/deazy_logo.svg" alt="Deazy Logo">
+
+                    <div>
+                        <h3 class="popup-header">LOGIN</h3>
+                    </div>
+
+
+
+                    <div class="container">
+                        <label for="un" ><b>Username</b></label>
+                        <input id="un" type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="container">
+                        <label for="pw"><b>Password</b></label>
+                        <input id="pw" type="password" placeholder="Password" name="password" required>
+                        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+                    </div>
+                    <div class="container" style="padding-top: 35px">
+                        <button class="middle-button" type="submit">Login</button>
+                    </div>
+                    <div class="container">
+
+                    </div>
+
+
+
+
+                </section>
+            </form>
+
+
+
+        </main>
+</body>
+</html>

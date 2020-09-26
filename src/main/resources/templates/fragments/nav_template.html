@@ -1,0 +1,22 @@
+<nav th:fragment="nav" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <div class="navnav">
+
+        <!-- When defining a src or href, use the location relative to the static folder - this is because thymeleaf creates a static file when using templated documents-->
+<div class="nav-left">
+        <img id="logox" alt="Deazy Logo" src="images/deazy_logo.svg">
+</div>
+
+        <div class="navRight">
+<!--            <a href="contactus">CONTACT US</a>-->
+            <a th:if="${session.SESSION_USERNAME != 'user'}" href="/adminfunctions">ADMIN FUNCTIONS</a>
+            <a href="/AllProjects">PROJECTS</a>
+            <a href="/input">INPUT PROJECT</a>
+            <a href="/teams">TEAMS</a>
+            <a th:if="${session.SESSION_USERNAME == null}" class="login" href="/logout" style="width:auto;">LOGOUT</a>
+
+        </div>
+    </div>
+
+
+</nav>

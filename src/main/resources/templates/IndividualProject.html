@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deazy</title>
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+
+<body>
+<nav th:replace="fragments/nav_template.html :: nav"></nav>
+
+    <main id="test">
+        <div id="introduction2">
+            <div class="teamProTitleBox">
+                <h1 class="hh1" th:text="${caseStudies.get(projectIndex).caseStudyTitle}"></h1>
+                <p th:replace="fragments/tags_template.html :: tags">
+                </p>
+            </div>
+            <p th:text="${caseStudies.get(projectIndex).caseStudyContent}"></p>
+            <p th:text="${caseStudies.get(projectIndex).teamName}"></p>
+        </div>
+    </main>
+
+<footer id="footer" th:replace="fragments/footer_template.html :: footer"></footer>
+
+</body>
+
+</html>
